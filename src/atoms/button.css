@@ -1,0 +1,101 @@
+.storybook-button {
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  border: 0;
+  border-radius: 3em;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1;
+}
+.storybook-button--primary {
+  color: white;
+  background-color: #1ea7fd;
+}
+.storybook-button--secondary {
+  color: #333;
+  background-color: transparent;
+  box-shadow: rgba(0, 0, 0, 0.15) 0em 0em 0em 1em inset;
+}
+.storybook-button--large {
+  font-size: 16em;
+  padding: 12em 24em;
+}
+
+.hex-button {
+  font-size: 18px;
+  border:none;
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+  width: 5.9em;
+  height: 3.5em;
+  margin: 2em 1em;
+  border-radius: 8px;
+  border-left: 4px solid #28282a;
+  border-right: 4px solid #28282a;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.03),
+    inset 0 0 0 0 rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+  background: green;
+  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+}
+  /* animation-name: fade;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite; */
+
+
+/* 
+.hex-button::after{
+  transform: rotate(60deg);
+  -webkit-transform: rotate(60deg);
+  content: " ";
+  border: none;
+  background: #ABF8FF;
+  width: 2.175em;
+  height: 1.4em;
+  position: absolute;
+  top: -5px;
+  right: 0px;
+  cursor: pointer;
+  z-index: -1;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  box-sizing:border-box;
+  border-radius: 4px;
+} */
+
+.hex-button:before,
+.hex-button:after {
+  box-sizing: border-box;
+  position: absolute;
+  display: block;
+  content: "";
+  width: 3.47em;
+  height: 3.5em;
+  left: .94em;
+  transform: rotate(45deg) skew(-13deg, -13deg);
+  border-radius: 8px;
+  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  background: inherit;
+}
+
+.hex-button:before {
+  top: -1.5em;
+  border-top: 4px solid #28282a;
+  border-left: 4px solid #28282a;
+  box-shadow: -1px -1px 0 0 rgba(255, 255, 255, 0.03),
+    inset 0 0 0 -4px rgba(0, 0, 0, 0.7);
+}
+
+.hex-button:after {
+  bottom: -1.5em;
+  border-bottom: 4px solid #28282a;
+  border-right: 4px solid #28282a;
+  box-shadow: 1px 1px 0 0 rgba(255, 255, 255, 0.03),
+    inset 0 0 0 -4px rgba(0, 0, 0, 0.7);
+}
