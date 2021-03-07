@@ -2,7 +2,8 @@ import React from "react";
 
 import { Story, Meta } from "@storybook/react";
 
-import { Page, PageProps } from "./Page";
+import { Page } from "./Page";
+import { PageProps } from "./PageProps";
 import * as HeaderStories from "../components/Header.stories";
 
 export default {

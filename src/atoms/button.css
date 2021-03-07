@@ -82,6 +82,7 @@
   transition: all 0.25s ease-in-out;
   -webkit-transition: all 0.25s ease-in-out;
   background: inherit;
+  z-index: -1;
 }
 
 .hex-button:before {

@@ -1,32 +1,14 @@
 import React from "react";
 import "./button.css";
+import { ButtonProps } from "./ButtonProps.interface";
 
-export interface ButtonProps {
-  /**
-   * Is this the principal call to action on the page?
-   */
-  primary?: boolean;
-  /**
-   * What background color to use
-   */
-  backgroundColor?: string;
-  /**
-   * How large should the button be?
-   */
-  label: string;
-  /**
-   * Optional click handler
-   */
-  onClick?: () => void;
-}
-
-/**
- * Primary UI component for user interaction
- */
+// eslint-disable-next-line import/prefer-default-export
 export const Button: React.FC<ButtonProps> = ({
   primary = false,
   backgroundColor,
   label,
+  src,
+  alt,
   ...props
 }: ButtonProps) => {
   const mode = primary
@@ -39,7 +21,7 @@ export const Button: React.FC<ButtonProps> = ({
       style={{ backgroundColor }}
       {...props}
     >
-      {label}
+      <img src={src} alt={alt} width="100%" />
     </button>
   );
 };
