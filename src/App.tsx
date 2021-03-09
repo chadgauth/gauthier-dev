@@ -21,7 +21,7 @@ function App() {
             <img src={me} alt="Chad Gauthier thinking at workstation" />
           </div>
           <div className="about">
-            <p>I am Chad Gauthier. I am <a href="">passionate</a>, I believe in <a href="#ubuntu">Ubuntu</a>, and I am <a href="">resilient</a>. If you are looking for a creative, a problem-solver, a visionary... <br/><br/> I am your person.</p>
+            <p>I am Chad Gauthier. I am <a className="no-link" href="">passionate</a>, I believe in <a href="#ubuntu">Ubuntu</a>, and I am <a className="no-link" href="">resilient</a>. If you are looking for a creative, a problem-solver, a visionary... <br/><br/> I am your person.</p>
           </div>
         </main>
         <footer>
@@ -29,7 +29,6 @@ function App() {
         </footer>
       </div>
       <div className="full-page" id="passionate">
-
       </div>
       <div className="full-page u-background" id="ubuntu">
         <div className="content">
