@@ -1,5 +1,6 @@
 import React from "react";
 import me from "./content/me.jpg";
+import words from "./content/words.png";
 import "./App.scss";
 
 function App() {
@@ -20,7 +21,7 @@ function App() {
             <img src={me} alt="Chad Gauthier thinking at workstation" />
           </div>
           <div className="about">
-            <p>I am Chad Gauthier. I am <a href="#passionate">passionate</a>, I believe in <a href="#ubuntu">Ubuntu</a>, and I am <a href="#resilient">resilient</a>. If you are looking for a creative, a problem-solver, a visionary... <br/><br/> I am your person.</p>
+            <p>I am Chad Gauthier. I am <a href="">passionate</a>, I believe in <a href="#ubuntu">Ubuntu</a>, and I am <a href="">resilient</a>. If you are looking for a creative, a problem-solver, a visionary... <br/><br/> I am your person.</p>
           </div>
         </main>
         <footer>
@@ -34,7 +35,7 @@ function App() {
         <div className="content">
         <a href="#me">back</a>
             <p className="slide">
-              A person with <b>Ubuntu</b> is open and available to others, <b>affirming</b> of others, does not feel threatened that others are <b>able and good</b>, based from a proper self-assurance that comes from knowing that he or she belongs in a <b>greater whole</b> and is diminished when others are humiliated or diminished, when others are tortured or oppressed.
+              A person with <b>Ubuntu</b> is open and available to others, <b>affirming</b> of others, does not feel threatened that others are <b>able and good</b>, based from a proper <b>self-assurance</b> that comes from knowing that he or she belongs in a <b>greater whole</b> and is diminished when others are humiliated or diminished, when others are tortured or oppressed.
             </p>
             <div className="cube"></div>
               <div className="cube"></div>
@@ -53,10 +54,16 @@ function App() {
       <div className="full-page" id="reviews">
         <div className="content">
           <a href="#me">back</a>
+          <div className="tooltip">
+            <span className="tooltip-text">{tooltip}</span>
+            <img src={words} alt="word cloud with 6 years of most common words from one on one reports: most common words are team, work, drove, business, designed, willing, improved, completed, and many more" />
+          </div>
         </div>
       </div>
     </div>
   );
 }
+
+const tooltip = "6 years of 1-1 reports visualized";
 
 export default App;
