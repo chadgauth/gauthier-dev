@@ -13,9 +13,10 @@
 }
 
 iframe {
-    width: 100vw;
-    height: 100vh;
+    width: 80vw;
+    height: 80vh;
 }
+
 
 /* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -53,7 +54,7 @@ iframe {
     color: white;
 }
 
-.align-r {
+.center {
     align-items: center;
     justify-content: center;
 }
@@ -72,7 +73,6 @@ iframe {
 }
 
 .cube {
-    z-index: 0;
     position: absolute;
     top: 80vh;
     left: 45vw;
@@ -125,7 +125,7 @@ b {
 
 .cube:nth-child(6) {
     animation-delay: 10s;
-    left: 50vw;
+    left: 33vw;
     top: 10vh;
 }
 
@@ -136,6 +136,10 @@ b {
 .full-page {
     height: 100vh;
     width: 100vw;
+}
+
+.my-3 {
+    margin: 40px 0;
 }
 
 .App-link {
@@ -339,6 +343,20 @@ a {
     100% {
         opacity: 0;
     }
+}
+
+.stretchedToMargin {
+    display: block;
+    position: absolute;
+    height: auto;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 80px;
+    margin-left: 80px;
 }
 
 .light {
