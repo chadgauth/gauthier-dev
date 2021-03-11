@@ -26,7 +26,8 @@ function App() {
           </div>
         </main>
         <div>
-          Do not just take my <a href="#reviews">word</a> for it.
+          <p>Do not just take my <a href="#reviews">word</a> for it.</p>
+          <p>Also, learn more about my <a href="/stories/index.html">stories</a>.</p>
         </div>
       </div>
       <div className="full-page black center" id="passionate">
