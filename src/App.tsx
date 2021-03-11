@@ -28,7 +28,7 @@ function App() {
           Do not just take my <a href="#reviews">word</a> for it.
         </footer>
       </div>
-      <div className="full-page" id="passionate">
+      <div className="full-page black" id="passionate">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/N-FCa-t93rM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
       <div className="full-page u-background" id="ubuntu">
