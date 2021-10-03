@@ -1,4 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:400,700);
+
+#me {
+     background: #050f2c;   
+}
+
 .App {
     text-align: center;
     font-family: 'Ubuntu', sans-serif;
@@ -49,9 +54,8 @@ iframe {
 }
 
 .full-page {
-    //background-color: #282c34;
-    font-size: calc(10px + 2vmin);
-    color: white;
+    font-size: calc(8px + 2vmin);
+    color: #fff;
 }
 
 .center {
@@ -130,7 +134,13 @@ b {
 }
 
 .content {
-    padding: 100px 12vw;
+    background: rgb(26 60 70 / 45%);
+    margin: 90px auto;
+    width: 90%;
+    max-width: 1024px;
+    border-radius: 4vw;
+    padding: 5vh 5vw;
+    backdrop-filter: blur(25px);
 }
 
 .full-page {
@@ -362,14 +372,10 @@ a {
 .light {
     position: absolute;
     width: 0px;
-    opacity: .75;
-    background-color: white;
-    box-shadow: #e9f1f1 0px 0px 20px 2px;
+    background-color: rgb(31 122 114);
+    box-shadow: 0 0 0.5vw 0.15vw rgb(103 229 136 / 45%);
     opacity: 0;
     top: 100vh;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
     margin: auto;
 }
 
