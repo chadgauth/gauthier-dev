@@ -3,6 +3,7 @@ import me from "./content/me.jpg";
 import words from "./content/words.png";
 import fall from "./content/fall.gif";
 import "./App.scss";
+import { Link } from "react-router-dom";
 
 function App() {
   return (
@@ -22,33 +23,13 @@ function App() {
             <img src={me} alt="Chad Gauthier thinking at workstation" />
           </div>
           <div className="about">
-            <p>I am Chad Gauthier. I am <a href="#passionate">passionate</a>, I believe in <a href="#ubuntu">Ubuntu</a>, and I am <a href="#resilient">resilient</a>. If you are looking for a creative, a problem-solver, a visionary... <br/><br/> I am your person.</p>
+            <p>I am Chad Gauthier. I am <Link to="/passionate">passionate</Link>, I believe in <Link to="/ubuntu">Ubuntu</Link>, and I am <a href="#resilient">resilient</a>. If you are looking for a creative, a problem-solver, a visionary... <br/><br/> I am your person.</p>
           </div>
         </main>
-        <div>
+        <aside>
           <p>Do not just take my <a href="#reviews">word</a> for it.</p>
-          <p>Also, learn more about my <a href="/stories/index.html">stories</a>.</p>
-        </div>
+        </aside>
       </div>
-      <div className="full-page black center" id="passionate">
-        <div className="my-3"><a href="#me">back</a></div>
-        <div><iframe src="https://www.youtube.com/embed/N-FCa-t93rM"></iframe></div>
-      </div>
-      <div className="full-page u-background" id="ubuntu">
-        <div className="content">
-          <a href="#me">back</a>
-          <p className="slide">
-            A person with <b>Ubuntu</b> is open and available to others, <b>affirming</b> of others, does not feel threatened that others are <b>able and good</b>, based from a proper <b>self-assurance</b> that comes from knowing that he or she belongs in a <b>greater whole</b> and is diminished when others are humiliated or diminished, when others are tortured or oppressed.
-          </p>
-          <div className="cube"></div>
-            <div className="cube"></div>
-            <div className="cube"></div>
-            <div className="cube"></div>
-            <div className="cube"></div>
-            <div className="cube"></div>
-            <div className="cube"></div>
-          </div>
-        </div>
       <div className="full-page" id="resilient">
         <div className="content">
           <a className="my-3" href="#me">back</a>
